@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MJ Resin Art | Luxury Furniture Manufacturer & Exporter</title>
+
+<meta name="description" content="MJ Resin Art is a premium furniture manufacturer and exporter specializing in resin furniture, solid wood furniture, live edge tables, dining tables, coffee tables and custom furniture.">
+
+<meta name="keywords" content="MJ Resin Art, luxury furniture, furniture manufacturer, furniture exporter, resin furniture, epoxy resin tables, solid wood furniture, live edge furniture, custom furniture, dining tables, coffee tables">
+
+<meta name="author" content="MJ Resin Art">
+
+<meta name="robots" content="index, follow">
+
+<meta name="googlebot" content="index, follow">
+
+<style>
+
+/* =========================
+   BASIC
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Georgia,"Times New Roman",serif;
+background:#f4efe6;
+color:#191919;
+line-height:1.7;
+overflow-x:hidden;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+padding:22px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:#0c0c0c;
+color:white;
+
+position:sticky;
+top:0;
+z-index:1000;
+
+border-bottom:1px solid #8f6a38;
+box-shadow:0 4px 20px rgba(0,0,0,.35);
+}
+
+.logo{
+font-size:26px;
+font-weight:bold;
+letter-spacing:2px;
+color:#d1a15a;
+
+animation:logoIn 1s ease;
+}
+
+nav a{
+color:#eee;
+text-decoration:none;
+margin-left:25px;
+font-family:Arial,sans-serif;
+font-size:14px;
+letter-spacing:1px;
+position:relative;
+transition:.3s;
+}
+
+nav a:hover{
+color:#d1a15a;
+}
+
+nav a::after{
+content:"";
+position:absolute;
+width:0;
+height:1px;
+background:#d1a15a;
+left:0;
+bottom:-7px;
+transition:.3s;
+}
+
+nav a:hover::after{
+width:100%;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+min-height:88vh;
+
+padding:80px 7%;
+
+display:flex;
+align-items:center;
+
+background:
+
+linear-gradient(
+90deg,
+rgba(0,0,0,.78),
+rgba(0,0,0,.45),
+rgba(0,0,0,.65)
+),
+
+url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=80")
+
+center/cover;
+
+color:white;
+
+position:relative;
+
+animation:heroZoom 10s ease-in-out infinite alternate;
+}
+
+.hero::after{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+border:1px solid rgba(209,161,90,.3);
+
+pointer-events:none;
+}
+
+.hero-content{
+max-width:750px;
+position:relative;
+z-index:2;
+}
+
+.hero h1{
+
+font-size:64px;
+
+letter-spacing:3px;
+
+color:#d1a15a;
+
+margin-bottom:10px;
+
+animation:fadeUp 1s ease .2s both;
+}
+
+.hero h2{
+
+font-size:30px;
+
+font-weight:normal;
+
+letter-spacing:1px;
+
+margin-bottom:20px;
+
+animation:fadeUp 1s ease .4s both;
+}
+
+.hero p{
+
+font-family:Arial,sans-serif;
+
+font-size:18px;
+
+max-width:650px;
+
+color:#eee;
+
+margin-bottom:35px;
+
+animation:fadeUp 1s ease .6s both;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn{
+
+display:inline-block;
+
+padding:14px 30px;
+
+margin-right:10px;
+
+margin-bottom:10px;
+
+border:1px solid #d1a15a;
+
+border-radius:2px;
+
+text-decoration:none;
+
+background:#b8894b;
+
+color:white;
+
+font-family:Arial,sans-serif;
+
+font-weight:bold;
+
+letter-spacing:.5px;
+
+transition:.4s;
+
+animation:fadeUp 1s ease .8s both;
+}
+
+.btn:hover{
+
+background:#d1a15a;
+
+color:#111;
+
+transform:translateY(-5px);
+
+box-shadow:0 12px 30px rgba(0,0,0,.35);
+}
+
+.btn.dark{
+
+background:transparent;
+
+border:1px solid #ddd;
+}
+
+.btn.dark:hover{
+
+background:white;
+
+color:#111;
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.products,
+.why,
+.contact{
+
+position:relative;
+}
+
+.products h2,
+.why h2,
+.contact h2{
+
+font-size:42px;
+
+letter-spacing:1px;
+
+margin-bottom:12px;
+}
+
+.products h2::after,
+.why h2::after,
+.contact h2::after{
+
+content:"";
+
+display:block;
+
+width:65px;
+
+height:2px;
+
+background:#b8894b;
+
+margin:15px auto 20px;
+}
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products{
+
+padding:90px 7%;
+
+text-align:center;
+
+background:#f4efe6;
+}
+
+.subtitle{
+
+font-family:Arial,sans-serif;
+
+color:#777;
+
+margin-bottom:45px;
+}
+
+.product-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+}
+
+.product{
+
+background:#fff;
+
+border:1px solid #e3d7c4;
+
+border-radius:3px;
+
+overflow:hidden;
+
+text-align:left;
+
+box-shadow:0 8px 25px rgba(60,40,20,.10);
+
+transition:.5s;
+
+animation:cardIn .8s ease both;
+}
+
+.product:hover{
+
+transform:translateY(-12px);
+
+box-shadow:0 20px 45px rgba(50,35,20,.22);
+}
+
+.product img{
+
+width:100%;
+
+height:250px;
+
+object-fit:cover;
+
+transition:.7s;
+}
+
+.product:hover img{
+
+transform:scale(1.08);
+}
+
+.product-content{
+
+padding:25px;
+}
+
+.product h3{
+
+font-size:22px;
+
+margin-bottom:8px;
+
+color:#4b351e;
+}
+
+.product p{
+
+font-family:Arial,sans-serif;
+
+font-size:14px;
+
+color:#666;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+
+padding:100px 7%;
+
+background:
+
+linear-gradient(
+rgba(15,15,15,.95),
+rgba(15,15,15,.95)
+);
+
+color:white;
+
+text-align:center;
+
+border-top:1px solid #806034;
+
+border-bottom:1px solid #806034;
+}
+
+.about h2{
+
+font-size:42px;
+
+color:#d1a15a;
+
+margin-bottom:25px;
+}
+
+.about p{
+
+max-width:850px;
+
+margin:auto;
+
+color:#ddd;
+
+font-size:17px;
+}
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+.why{
+
+padding:90px 7%;
+
+text-align:center;
+
+background:#eee6d9;
+}
+
+.why-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:22px;
+}
+
+.why-box{
+
+background:#fff;
+
+padding:32px 20px;
+
+border:1px solid #dfd1bd;
+
+border-radius:3px;
+
+box-shadow:0 6px 20px rgba(50,35,20,.08);
+
+transition:.4s;
+}
+
+.why-box:hover{
+
+transform:translateY(-9px);
+
+border-color:#b8894b;
+
+box-shadow:0 15px 30px rgba(50,35,20,.16);
+}
+
+.why-box h3{
+
+color:#6b4a25;
+
+margin-bottom:10px;
+
+font-size:20px;
+}
+
+.why-box p{
+
+font-family:Arial,sans-serif;
+
+font-size:14px;
+
+color:#666;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+
+padding:90px 7%;
+
+text-align:center;
+
+background:#ded2c0;
+}
+
+.contact h2{
+
+font-size:42px;
+}
+
+.contact-info{
+
+margin:30px 0;
+
+font-family:Arial,sans-serif;
+
+font-size:16px;
+}
+
+.contact-info p{
+
+margin:13px 0;
+}
+
+.contact-info a{
+
+color:#5b3d1d;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.3s;
+}
+
+.contact-info a:hover{
+
+color:#a87535;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+padding:30px;
+
+background:#0c0c0c;
+
+color:#aaa;
+
+text-align:center;
+
+font-family:Arial,sans-serif;
+
+font-size:13px;
+
+border-top:1px solid #806034;
+}
+
+/* =========================
+   FLOATING WHATSAPP
+========================= */
+
+.whatsapp{
+
+position:fixed;
+
+right:20px;
+
+bottom:20px;
+
+width:60px;
+
+height:60px;
+
+border-radius:50%;
+
+background:#25D366;
+
+color:white;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-decoration:none;
+
+font-size:28px;
+
+z-index:999;
+
+box-shadow:0 5px 25px rgba(0,0,0,.3);
+
+animation:pulse 2s infinite;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(35px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@keyframes cardIn{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@keyframes logoIn{
+
+from{
+opacity:0;
+transform:translateX(-30px);
+}
+
+to{
+opacity:1;
+transform:translateX(0);
+}
+
+}
+
+@keyframes heroZoom{
+
+from{
+background-size:100%;
+}
+
+to{
+background-size:108%;
+}
+
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.1);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:800px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+nav a{
+margin:0 7px;
+font-size:13px;
+}
+
+.hero{
+
+min-height:78vh;
+
+padding:60px 7%;
+}
+
+.hero h1{
+font-size:43px;
+}
+
+.hero h2{
+font-size:23px;
+}
+
+.product-grid{
+grid-template-columns:1fr;
+}
+
+.why-grid{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:500px){
+
+.hero h1{
+font-size:36px;
+}
+
+.hero h2{
+font-size:20px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.products h2,
+.why h2,
+.contact h2,
+.about h2{
+font-size:34px;
+}
+
+.why-grid{
+grid-template-columns:1fr;
+}
+
+.whatsapp{
+right:15px;
+bottom:15px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">
+MJ Resin Art
+</div>
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#products">Products</a>
+
+<a href="#about">About</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>MJ Resin Art</h1>
+
+<h2>
+Premium Furniture Manufacturer & Exporter
+</h2>
+
+<p>
+Premium resin, solid wood and custom furniture
+crafted with quality, creativity and attention to detail.
+</p>
+
+<a href="#products" class="btn">
+View Our Products
+</a>
+
+<a href="#contact" class="btn dark">
+Contact Us
+</a>
+
+</div>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section class="products" id="products">
+
+<h2>Our Products</h2>
+
+<p class="subtitle">
+Premium furniture designed for modern homes and businesses.
+</p>
+
+<div class="product-grid">
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80">
+
+<div class="product-content">
+
+<h3>Dining Tables</h3>
+
+<p>
+Premium dining tables with modern and custom designs.
+</p>
+
+</div>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1532372320572-cda25653a26d?auto=format&fit=crop&w=900&q=80">
+
+<div class="product-content">
+
+<h3>Coffee Tables</h3>
+
+<p>
+Elegant coffee tables crafted with premium materials.
+</p>
+
+</div>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80">
+
+<div class="product-content">
+
+<h3>Solid Wood Furniture</h3>
+
+<p>
+Strong, durable and beautifully finished solid wood furniture.
+</p>
+
+</div>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1549497538-303791108f95?auto=format&fit=crop&w=900&q=80">
+
+<div class="product-content">
+
+<h3>Resin Furniture</h3>
+
+<p>
+Unique resin furniture made for premium interiors.
+</p>
+
+</div>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=900&q=80">
+
+<div class="product-content">
+
+<h3>Live Edge Furniture</h3>
+
+<p>
+Natural wood character combined with modern craftsmanship.
+</p>
+
+</div>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80">
+
+<div class="product-content">
+
+<h3>Custom Furniture</h3>
+
+<p>
+Made-to-order furniture according to your requirements.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<h2>
+About MJ Resin Art
+</h2>
+
+<p>
+
+MJ Resin Art specializes in premium resin furniture,
+solid wood furniture and custom furniture solutions.
+We focus on quality craftsmanship, unique designs
+and reliable service for domestic and international buyers.
+
+</p>
+
+</section>
+
+<!-- WHY -->
+
+<section class="why">
+
+<h2>
+Why Choose Us
+</h2>
+
+<div class="why-grid">
+
+<div class="why-box">
+
+<h3>Premium Quality</h3>
+
+<p>
+Quality materials and careful craftsmanship.
+</p>
+
+</div>
+
+<div class="why-box">
+
+<h3>Custom Designs</h3>
+
+<p>
+Furniture made according to your requirements.
+</p>
+
+</div>
+
+<div class="why-box">
+
+<h3>Export Quality</h3>
+
+<p>
+Products prepared for international buyers.
+</p>
+
+</div>
+
+<div class="why-box">
+
+<h3>Made to Order</h3>
+
+<p>
+Customized sizes, materials and designs available.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2>
+Let's Create Something Beautiful
+</h2>
+
+<p>
+Contact MJ Resin Art for furniture enquiries and custom orders.
+</p>
+
+<div class="contact-info">
+
+<p>
+💬 WhatsApp:
+<a href="https://wa.me/917023815284">
+Chat with us
+</a>
+</p>
+
+<p>
+📧 Email:
+<a href="mailto:Sanjaykumarjangir421@gmail.com">
+Sanjaykumarjangir421@gmail.com
+</a>
+</p>
+
+<p>
+📸 Instagram:
+<a href="https://www.instagram.com/I.satya_/" target="_blank">
+@I.satya_
+</a>
+</p>
+
+</div>
+
+<a href="https://wa.me/917023815284" class="btn">
+WhatsApp Us
+</a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 MJ Resin Art. All Rights Reserved.
+</p>
+
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+href="https://wa.me/917023815284"
+class="whatsapp"
+aria-label="WhatsApp"
+>
+💬
+</a>
+
+</body>
+</html>
